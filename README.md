@@ -36,6 +36,7 @@ find        使用匹配表达式查找文件      find . -name "*.c" -print
 file        显示文件类型               file filename
 ln          联接文件                   ln -s file1 file2
 od          显示非文本文件的内容         od -c filename
+zip         压缩文件加密                zip -e filename
 ```
 
 # 选择操作
@@ -84,6 +85,7 @@ ps      显示进程当前状态              ps u
 kill    终止进程                     kill -9 30142
 nice    改变待执行命令的优先级         nice cc -c *.c
 renice  改变已运行进程的优先级         renice +20 32768
+lsof    查看终端端口号暂用线程         lsof -i tc:8081
 ```
 
 # 时间操作
